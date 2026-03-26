@@ -19,7 +19,7 @@ config.resolver.nodeModulesPaths = [
 ];
 
 config.resolver.extraNodeModules = {
-  'expo-audio-stream': '..',
+  'expo-audio-stream-pcm': '..',
 };
 
 config.watchFolders = [path.resolve(__dirname, '..')];

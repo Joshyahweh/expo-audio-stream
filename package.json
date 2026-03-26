@@ -1,5 +1,5 @@
 {
-  "name": "expo-audio-stream",
+  "name": "expo-audio-stream-pcm",
   "version": "0.1.1",
   "description": "Real-time PCM audio streaming for Expo (New Architecture)",
   "main": "build/index.js",
@@ -38,18 +38,20 @@
     "open:ios": "xed example/ios",
     "open:android": "open -a \"Android Studio\" example/android"
   },
-  "repository": "https://github.com/Joshyahweh/expo-audio-stream",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshyahweh/expo-audio-stream-pcm.git"
+  },
   "bugs": {
-    "url": "https://github.com/Joshyahweh/expo-audio-stream/issues"
+    "url": "https://github.com/Joshyahweh/expo-audio-stream-pcm/issues"
   },
   "author": "Joshua Ojoawo <joshojoawo@gmail.com> (https://github.com/Joshyahweh)",
   "license": "MIT",
-  "homepage": "https://github.com/Joshyahweh/expo-audio-stream#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/Joshyahweh/expo-audio-stream-pcm#readme",
   "devDependencies": {
     "@types/react": "~19.1.1",
-    "expo-module-scripts": "^55.0.2",
     "expo": "^55.0.8",
+    "expo-module-scripts": "^55.0.2",
     "react-native": "0.82.1"
   }
 }

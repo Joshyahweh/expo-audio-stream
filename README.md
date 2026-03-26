@@ -1,4 +1,4 @@
-# expo-audio-stream
+# expo-audio-stream-pcm
 
 Real-time **16-bit PCM** capture from the device microphone on **Android** and **iOS**, delivered to JavaScript as **Base64-encoded chunks** via Expo’s event system. The module is implemented with **AudioRecord** (Android) and **AVAudioEngine** (iOS), targets **Expo SDK 55+** and **React Native’s New Architecture** (JSI / Turbo Modules), and works in **managed** and **bare** Expo workflows.
 
@@ -11,7 +11,7 @@ Many older audio packages still assume the legacy bridge or lack first-class New
 In your app (Expo SDK 55+):
 
 ```bash
-npx expo install expo-audio-stream
+npx expo install expo-audio-stream-pcm
 ```
 
 For a **bare** React Native app using Expo modules, follow [Expo’s native setup](https://docs.expo.dev/bare/installing-expo-modules/) so `expo-modules-core` is linked, then install the package as above.
@@ -70,7 +70,7 @@ The default export is an object `{ start, stop, addListener }` for convenience.
 ### Example
 
 ```ts
-import ExpoAudioStream from 'expo-audio-stream';
+import ExpoAudioStream from 'expo-audio-stream-pcm';
 
 ExpoAudioStream.start({ sampleRate: 16000, channels: 1, bitDepth: 16 });
 
@@ -88,7 +88,7 @@ Below is a minimal pattern: request the mic in your app, open a Deepgram **WebSo
 
 ```ts
 import * as FileSystem from 'expo-file-system';
-import ExpoAudioStream from 'expo-audio-stream';
+import ExpoAudioStream from 'expo-audio-stream-pcm';
 
 const DG_KEY = process.env.EXPO_PUBLIC_DEEPGRAM_KEY!; // never ship production keys in client apps
 

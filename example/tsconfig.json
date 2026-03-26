@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-audio-stream": ["../src/index"],
-      "expo-audio-stream/*": ["../src/*"]
+      "expo-audio-stream-pcm": ["../src/index"],
+      "expo-audio-stream-pcm/*": ["../src/*"]
     }
   }
 }

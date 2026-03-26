@@ -6,7 +6,7 @@ module.exports = async (env, argv) => {
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['expo-audio-stream'],
+        dangerouslyAddModulePathsToTranspile: ['expo-audio-stream-pcm'],
       },
     },
     argv

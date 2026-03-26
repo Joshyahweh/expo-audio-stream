@@ -1,5 +1,5 @@
 import { requestRecordingPermissionsAsync } from 'expo-audio';
-import ExpoAudioStream, { type AudioDataEvent } from 'expo-audio-stream';
+import ExpoAudioStream, { type AudioDataEvent } from 'expo-audio-stream-pcm';
 import { useCallback, useEffect, useState } from 'react';
 import {
   Alert,
@@ -57,7 +57,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
-        <Text style={styles.title}>expo-audio-stream</Text>
+        <Text style={styles.title}>expo-audio-stream-pcm</Text>
         <Text style={styles.status}>Status: {status}</Text>
         <Text style={styles.counter}>Chunks received: {chunkCount}</Text>
         <Text style={styles.meta}>
