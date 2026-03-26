@@ -1,6 +1,6 @@
 {
   "name": "expo-audio-stream-pcm",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Real-time PCM audio streaming for Expo (New Architecture)",
   "main": "build/index.js",
   "types": "build/index.d.ts",
